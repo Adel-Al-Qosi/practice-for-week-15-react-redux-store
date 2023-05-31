@@ -6,6 +6,11 @@ import { createStore, applyMiddleware, compose, combineReducers } from 'redux';
 // components.
 
 // create rootReducer here:
+import fruitReducer from './fruitReducer'
+
+const rootReducer = combineReducers({
+  fruitState: fruitReducer
+})
 
 // `enhancer` allows you to alter the store and add functionality such as the
 // Redux DevTools and logger (similar to morgan) middleware
